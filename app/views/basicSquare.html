@@ -3,15 +3,14 @@
 		<label for="inputMe">Type a number:</label>
 		<input id="inputMe" ng-model="vm.numberToSquare" autofocus/>
 
-		<p>The square of {{vm.numberToSquare}} is {{Math.pow(vm.numberToSquare || 0,2)}}
+		<p>{{vm.numberToSquare}} squared is {{Math.pow(vm.numberToSquare || 0,2)}}
 	</section>
 
 
 	<pre ng-non-bindable>
 	&lt;input ng-model="vm.numberToSquare"&gt;
 	
-	The square of
-	{{vm.numberToSquare}} is
+	{{vm.numberToSquare}} squared is
 	{{Math.pow(vm.numberToSquare || 0, 2)}}
 	</pre>
 

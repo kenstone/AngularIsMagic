@@ -180,6 +180,14 @@ article.scope img {
   max-width: 100%;
 }
 
+article.template img {
+  vertical-align: middle;
+}
+
+article.template h1 {
+  font-size: 10rem;
+}
+
 article.list h4 {
   display: inline;
 }
