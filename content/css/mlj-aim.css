@@ -5,7 +5,7 @@
 body{font-family:"proxima-nova",sans-serif;font-style:normal;font-weight:500;color:#8f2792;font-size:36px}
 h1,h2,h3,h4,h5,h6{font-family:"proxima-nova",sans-serif;font-style:normal;font-weight:100}
 h1{font-size:6rem}h1.abbr{margin-top:0;margin-bottom:0;display:inline}h1.abbr span{font-size:3rem}
-article{height:98vh;width:98vw;display:flex;flex-pack:center;align-items:center}article.title img{max-height:90vh}
+article{height:98vh;width:98%;display:flex;flex-pack:space-around;align-items:center}article.title img{max-height:90vh}
 article.spa section{display:flex;max-width:75%;align-items:center;justify-content:center}article.spa section div{margin-right:2rem}
 article.spa h1{display:block}
 article.spa img{max-width:75%}
@@ -18,15 +18,16 @@ article.scope{flex-direction:column}article.scope img{max-width:100%}
 article.template img{vertical-align:middle}
 article.template h1{font-size:10rem}
 article.list h4{display:inline}
-article.list img{max-width:100px;vertical-align:middle;margin-bottom:1rem}
-article.end{flex-direction:column}article.end h1{margin-top:1rem;margin-bottom:1rem}
-article.end h2{margin-top:1rem}
-article.end h3{margin:0;font-weight:500}
-article.end footer{position:absolute;left:2rem;bottom:2rem}
-article.end img{max-width:500px}
+article.list img{max-width:75px;vertical-align:middle;margin-bottom:1rem}
+article.end{flex-direction:column;justify-content:flex-start}article.end h1{margin-top:0;margin-bottom:0}
+article.end h2{margin-top:0;margin-bottom:2rem}
+article.end h3{margin:0;font-weight:500}article.end h3.light{font-weight:100}
+article.end footer{position:absolute;left:2rem;bottom:4rem}
+article.end img{max-width:40%}
 section{max-width:50%}
 label{display:block;color:#8f2792}
 pre{font-family:"source-code-pro",sans-serif;font-style:normal;font-weight:400;font-size:1.75rem}
 ul{list-style:none}
 .ponyPal{position:absolute;top:0;right:100px;max-height:150px}
 a{text-decoration:none;color:#8f2792}
+input{width:16rem}

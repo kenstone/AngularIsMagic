@@ -47,10 +47,10 @@ h1 {
 
 article {
 	height:98vh;
-	width:98vw;
+	width:98%;
 
 	display:flex;
-	flex-pack:center;
+	flex-pack:space-around;
 	align-items: center;
 	&.title {
 		img {
@@ -157,7 +157,7 @@ article {
 			display:inline;
 		}
 		img {
-			max-width:100px;
+			max-width:75px;
 			vertical-align: middle;
 			margin-bottom:1rem;
 		}
@@ -165,29 +165,35 @@ article {
 
 	&.end {
 		flex-direction:column;
+		justify-content:flex-start;
 
 		h1 {
-			margin-top:1rem;
-			margin-bottom:1rem;
+			margin-top:0;
+			margin-bottom:0;
 		}
 
 		h2 {
-			margin-top:1rem;
+			margin-top:0;
+			margin-bottom:2rem;
 		}
 
 		h3 {
 			margin:0;
 			font-weight:500;
+
+			&.light {
+				font-weight:100;
+			}
 		}
 
 		footer {
 			position:absolute;
 			left:2rem;
-			bottom:2rem;
+			bottom:4rem;
 		}
 
 		img {
-			max-width:500px;
+			max-width:40%;
 		}
 	}
 }
@@ -221,4 +227,8 @@ ul {
 a {
 	text-decoration: none;
 	.purple;
+}
+
+input {
+	width:16rem;
 }
