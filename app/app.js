@@ -12,10 +12,10 @@ ponies.config(['$routeProvider', function($routeProvider) {
 				   when('/page/6', {templateUrl: 'app/views/basicInput.html'}).
 				   when('/page/7', {templateUrl: 'app/views/basicNames.html'}).
 				   when('/page/8', {templateUrl: 'app/views/basicSquare.html'}).
-				   when('/page/9', {templateUrl: 'app/views/fancySquare.html'}).
-				   when('/page/10', {templateUrl: 'app/views/list.html'}).
-				   when('/page/11', {templateUrl: 'app/views/list-filter.html'}).
-				   when('/page/12', {templateUrl: 'app/views/end.html'})
+				   //when('/page/9', {templateUrl: 'app/views/fancySquare.html'}).
+				   when('/page/9', {templateUrl: 'app/views/list.html'}).
+				   when('/page/10', {templateUrl: 'app/views/list-filter.html'}).
+				   when('/page/11', {templateUrl: 'app/views/end.html'})
 }]);
 
 ponies.controller('PonyController', ['$scope', '$location', function($scope, $location) {
