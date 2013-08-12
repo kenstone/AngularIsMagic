@@ -218,6 +218,10 @@ article.end footer {
   bottom: 2rem;
 }
 
+article.end img {
+  max-width: 500px;
+}
+
 section {
   max-width: 50%;
 }
@@ -242,5 +246,10 @@ ul {
   position: absolute;
   top: 0;
   right: 100px;
-  max-width: 200px;
+  max-height: 150px;
+}
+
+a {
+  text-decoration: none;
+  color: #8f2792;
 }

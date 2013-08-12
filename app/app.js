@@ -26,7 +26,9 @@ ponies.controller('PonyController', ['$scope', '$location', function($scope, $lo
 	$scope.changePage = function(e) {
 		switch (e.keyIdentifier) {
 			case "Right":
-				currentPageNumber++;
+				if (currentPageNumber < 12) {
+					currentPageNumber++;
+				}
 				break;
 			case "Left":
 				if (currentPageNumber > 0) {
