@@ -1,0 +1,205 @@
+.body-font {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 500;
+}
+
+.light-font {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 100;	
+}
+
+.code-font {
+	font-family: "source-code-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.purple {
+	color: #8F2792;
+}
+
+body {
+	.body-font;
+	.purple;
+	font-size:36px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	.light-font;
+}
+
+h1 {
+	font-size:6rem;
+
+	&.abbr {
+		margin-top:0;
+		margin-bottom:0;
+		display:inline;
+
+		span {
+			font-size:3rem;
+		}
+	}
+}
+
+
+article {
+	height:98vh;
+	width:98vw;
+
+	display:flex;
+	flex-pack:center;
+	align-items: center;
+	&.title {
+		img {
+			max-height:90vh;
+		}		
+	}
+
+	&.spa {
+
+		section {
+			display:flex;
+			max-width:75%;
+			align-items:center;
+
+			justify-content:center;
+
+			div {
+				margin-right:2rem;
+			}
+		}
+
+		h1 {
+			display:block;
+		}
+		
+		img {
+			max-width:75%;
+		}
+
+	}
+
+	&.mvc {
+
+		width:100vw;
+		align-content:space-around;
+
+		ul {
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;	
+			width:100%;
+			align-items:stretch;
+			margin:0;
+			padding-left: 0;
+
+			li {
+				flex-direction:column;
+				width:300px;
+			}
+
+			*.props {
+				margin-top: 0;
+				margin-bottom:0;
+				display:inline-block;
+				width:auto;
+				vertical-align: top;
+
+
+				li {
+					display:block;
+					width:100%;
+					font-weight:300;
+					font-size:1.5rem;
+					line-height: 2.5rem;
+				}
+			}
+
+			h1 {
+				display:block;
+			}
+		}
+
+		label {
+			display:block;
+		}
+
+		img {
+			height:300px;
+		}
+
+	}
+
+	&.scope {
+		flex-direction:column;
+
+		img {
+			max-width:100%;
+		}
+	}
+
+	&.list {
+
+		h4 {
+			display:inline;
+		}
+		img {
+			max-width:100px;
+			vertical-align: middle;
+			margin-bottom:1rem;
+		}
+	}
+
+	&.end {
+		flex-direction:column;
+
+		h1 {
+			margin-top:1rem;
+			margin-bottom:1rem;
+		}
+
+		h2 {
+			margin-top:1rem;
+		}
+
+		h3 {
+			margin:0;
+			font-weight:500;
+		}
+
+		footer {
+			position:absolute;
+			left:2rem;
+			bottom:2rem;
+		}
+	}
+}
+
+section {
+	max-width:50%;
+}
+
+label {
+	display:block;
+	.purple;
+}
+
+pre {
+	.code-font;
+	font-size:1.75rem;
+}
+
+ul {
+	list-style: none;
+}
+
+.ponyPal {
+	position:absolute;
+	top:0;
+	right:100px;
+
+	max-width:200px;
+}

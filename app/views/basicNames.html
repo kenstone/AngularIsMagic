@@ -1,0 +1,22 @@
+<article>
+	<section>
+		<label for="inputMe">First Name:</label>
+		<input id="inputMe" ng-model="vm.firstName" autofocus/>
+
+		<label for="lastName">Last Name:</label>
+		<input id="lastName" ng-model="vm.lastName"/>
+		
+		<p>Your name is {{vm.firstName}} {{vm.lastName}}
+	</section>
+
+
+	<pre ng-non-bindable>
+	&lt;input ng-model="vm.firstName"&gt;
+	&lt;input ng-model="vm.lastName"&gt;
+	
+	Your name is 
+	{{vm.firstName}} {{vm.lastName}}
+	</pre>
+
+	<img class="ponyPal" src="../../content/images/scootaloo.png" alt="Scootaloo"/>
+</article>

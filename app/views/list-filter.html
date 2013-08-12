@@ -1,0 +1,27 @@
+<article ng-init="vm.ponies=[{name:'Applejack', type:'Pony', imageUrl:'../../content/images/applejack.jpg'},
+							 {name:'Fluttershy', type:'Pegasus', imageUrl:'../../content/images/fluttershy.jpg'},
+							 {name:'Pinkie Pie', type:'Pony', imageUrl:'../../content/images/pinkiepie.png'},
+							 {name:'Twilight Sparkle', type:'Unicorn', imageUrl:'../../content/images/twilight-sparkle.jpg'},
+							 {name:'Rainbow Dash', type:'Pegasus', imageUrl:'../../content/images/rainbowdash.jpg'},
+							 {name:'Rarity', type:'Unicorn', imageUrl:'../../content/images/rarity.png'}]" class="list">
+
+<section>
+	<label for="typeInput">Filter</label>
+	<input id="typeInput" ng-model="typeFilter" autofocus/>
+	<ul>
+		<li ng-repeat="pony in vm.ponies | filter:typeFilter">
+		<h4>{{pony.name}}</h4>
+		<img ng-src="{{pony.imageUrl}}"/>
+		</li>
+	</ul>
+</section>
+<pre ng-non-bindable>
+	&lt;input ng-model="typeFilter"/&gt;
+	&lt;ul&gt;
+	  &lt;li ng-repeat="pony in vm.ponies | filter:typeFilter"&gt;
+	    &lt;h4&gt;{{pony.name}}&lt;/h4&gt;
+	    &lt;img ng-src="{{pony.imageUrl}}"/&gt;
+	  &lt;/li&gt;
+	&lt;/ul&gt;
+</pre>
+</article>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="AngularIsMagic">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="content/css/normalize.min.css">
+        <link rel="stylesheet" href="content/css/aim.css">
+        <script type="text/javascript" src="//use.typekit.net/tlg4bsr.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <script src="scripts/angular.js"></script>
+        <script src="app/app.js"></script>
+    </head>
+    
+    <body ng-controller="PonyController" ng-keyup="changePage($event)">
+        <ng-view>
+
+        </ng-view>
+
+
+
+    </body>
+</html>

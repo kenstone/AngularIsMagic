@@ -1,0 +1,246 @@
+.body-font {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.light-font {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.code-font {
+  font-family: "source-code-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.purple {
+  color: #8f2792;
+}
+
+body {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #8f2792;
+  font-size: 36px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h1.abbr {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline;
+}
+
+h1.abbr span {
+  font-size: 3rem;
+}
+
+article {
+  height: 98vh;
+  width: 98vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+article.title img {
+  max-height: 90vh;
+}
+
+article.spa section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 75%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+article.spa section div {
+  margin-right: 2rem;
+}
+
+article.spa h1 {
+  display: block;
+}
+
+article.spa img {
+  max-width: 75%;
+}
+
+article.mvc {
+  width: 100vw;
+  -webkit-align-content: space-around;
+  -ms-flex-line-pack: distribute;
+  align-content: space-around;
+}
+
+article.mvc ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  margin: 0;
+  padding-left: 0;
+}
+
+article.mvc ul li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 300px;
+}
+
+article.mvc ul *.props {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+}
+
+article.mvc ul *.props li {
+  display: block;
+  width: 100%;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+article.mvc ul h1 {
+  display: block;
+}
+
+article.mvc label {
+  display: block;
+}
+
+article.mvc img {
+  height: 300px;
+}
+
+article.scope {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+article.scope img {
+  max-width: 100%;
+}
+
+article.list h4 {
+  display: inline;
+}
+
+article.list img {
+  max-width: 100px;
+  vertical-align: middle;
+  margin-bottom: 1rem;
+}
+
+article.end {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+article.end h1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+article.end h2 {
+  margin-top: 1rem;
+}
+
+article.end h3 {
+  margin: 0;
+  font-weight: 500;
+}
+
+article.end footer {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+}
+
+section {
+  max-width: 50%;
+}
+
+label {
+  display: block;
+  color: #8f2792;
+}
+
+pre {
+  font-family: "source-code-pro",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.ponyPal {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  max-width: 200px;
+}

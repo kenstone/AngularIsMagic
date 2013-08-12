@@ -1,0 +1,20 @@
+<article ng-init="vm.mvc=[{letter:'M',description:'odel', ponyName:'Rarity', imageUrl:'../../content/images/rarity.png',descriptors:['Ideal','Uncluttered','Fashion Designer']},
+{letter:'V',description:'iew',ponyName:'Pinkie Pie', imageUrl:'../../content/images/pinkiepie.png', descriptors:['All About Appearances','User Focused','Party Planner']},
+{letter:'C',description:'ontroller',ponyName:'Applejack', imageUrl:'../../content/images/applejack.jpg', descriptors:['Does the Work','Unglamorous','Apple Farmer']}]"
+
+class="mvc"
+
+>
+<ul>
+	<li ng-repeat="pony in vm.mvc">
+		<h1 class="abbr">{{pony.letter}}<span>{{pony.description}}</span>
+		</h1>
+		<label class="ponyName">{{pony.ponyName}}</label>
+		<img ng-src="{{pony.imageUrl}}"/>
+		<ul class="props">
+			<li ng-repeat="attribute in pony.descriptors">{{attribute}}</li>
+		</ul>
+	</li>
+
+</ul>
+</article>
