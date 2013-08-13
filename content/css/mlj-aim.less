@@ -186,14 +186,16 @@ article {
 			}
 		}
 
-		footer {
-			position:absolute;
-			left:2rem;
-			bottom:4rem;
-		}
-
 		img {
 			max-width:40%;
+		}
+	}
+
+	&.home {
+		flex-direction:column;
+
+		footer {
+			right:2rem;
 		}
 	}
 }
@@ -231,4 +233,10 @@ a {
 
 input {
 	width:16rem;
+}
+
+footer {
+	position:absolute;
+	left:2rem;
+	bottom:4rem;
 }

@@ -228,14 +228,20 @@ article.end h3.light {
   font-weight: 100;
 }
 
-article.end footer {
-  position: absolute;
-  left: 2rem;
-  bottom: 4rem;
-}
-
 article.end img {
   max-width: 40%;
+}
+
+article.home {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+article.home footer {
+  right: 2rem;
 }
 
 section {
@@ -272,4 +278,10 @@ a {
 
 input {
   width: 16rem;
+}
+
+footer {
+  position: absolute;
+  left: 2rem;
+  bottom: 4rem;
 }

@@ -22,8 +22,8 @@ article.list img{max-width:75px;vertical-align:middle;margin-bottom:1rem}
 article.end{flex-direction:column;justify-content:flex-start}article.end h1{margin-top:0;margin-bottom:0}
 article.end h2{margin-top:0;margin-bottom:2rem}
 article.end h3{margin:0;font-weight:500}article.end h3.light{font-weight:100}
-article.end footer{position:absolute;left:2rem;bottom:4rem}
 article.end img{max-width:40%}
+article.home{flex-direction:column}article.home footer{right:2rem}
 section{max-width:50%}
 label{display:block;color:#8f2792}
 pre{font-family:"source-code-pro",sans-serif;font-style:normal;font-weight:400;font-size:1.75rem}
@@ -31,3 +31,4 @@ ul{list-style:none}
 .ponyPal{position:absolute;top:0;right:100px;max-height:150px}
 a{text-decoration:none;color:#8f2792}
 input{width:16rem}
+footer{position:absolute;left:2rem;bottom:4rem}
