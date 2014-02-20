@@ -1,15 +1,17 @@
 {
   "name": "AngularIsMagic",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-watch": "~0.4.4",
     "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
-    "grunt-autoprefixer": "~0.2.0"
-    },
-
+    "grunt-autoprefixer": "~0.7.0"
+  },
   "engines": {
     "node": ">=0.8.0"
+  },
+  "devDependencies": {
+    "bower": "~1.2.8"
   }
 }

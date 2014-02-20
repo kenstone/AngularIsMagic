@@ -1,0 +1,22 @@
+{
+  "name": "AngularIsMagic",
+  "version": "0.2.0",
+  "homepage": "https://github.com/kenstone/AngularIsMagic",
+  "authors": [
+    "Dave Iffland <david@heavyco.de>"
+  ],
+  "description": "Website to contain a series of angular examples.",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.13"
+  }
+}
