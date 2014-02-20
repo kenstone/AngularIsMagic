@@ -1,7 +1,4 @@
 AngularIsMagic
 ==============
 
-Introduction to AngularJS via My Little Pony
-
-
-This is a slide presentation.
+Angular Is Magic is a series of samples, demos, and presentations on AngularJS.
