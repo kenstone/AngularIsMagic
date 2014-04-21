@@ -2,6 +2,7 @@
 <html ng-app="simpleAnimate">
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Simple Animation - Angular Is Magic</title>
     <script type="text/javascript" src="//use.typekit.net/tlg4bsr.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -16,7 +17,7 @@
 
     <div id="main" ng-class="{'menuShowing': showMenu}">
         <header>
-            <button ng-click="showMenu = !showMenu">{{showMenu ? 'Hide' : 'Show'}} Menu</button>
+            <button ng-click="showMenu = !showMenu"><img src='hamburger.png' alt="Show/Hide Menu"/></button>
             <h1>Slider Menu Animation Sample</h1>
         </header>
     </div>

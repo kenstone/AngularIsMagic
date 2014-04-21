@@ -11,14 +11,17 @@ body {
   font-weight: 400;
 }
 button {
-  border-radius: 4px;
-  vertical-align: text-bottom;
+  background-color: transparent;
+  border: none;
   color: #222222;
+  outline: none;
+  vertical-align: middle;
 }
 h1 {
   display: inline;
+  font-size: 1.1rem;
   line-height: 4rem;
-  margin-left: 2rem;
+  margin-left: .5rem;
 }
 #main {
   position: absolute;
@@ -34,7 +37,7 @@ h1 {
   background-color: #012955;
   color: #FFFFFF;
   height: 4rem;
-  padding-left: 3rem;
+  padding-left: .5rem;
 }
 #menu {
   background-color: #666666;
