@@ -3,6 +3,6 @@ app.directive('spinner', function() {
     return {
         restrict: 'E',
         replace: true,
-        template: "<div><img src='spinner.gif'/></div>"
+        template: "<div><img src='spinner.gif'></div>"
     }
 })

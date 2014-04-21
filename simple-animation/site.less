@@ -1,0 +1,140 @@
+.transition {
+
+  -webkit-transition:ease-out 0.2s;
+  -moz-transition:ease-out 0.2s;
+  -o-transition:ease-out 0.2s;
+  transition:ease-out 0.2s;
+
+}
+
+
+body {
+  font-size: 20px;
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+button {
+  border-radius: 4px;
+  vertical-align: text-bottom;
+  color: #222222;
+}
+
+h1 {
+  display: inline;
+  line-height: 4rem;
+  margin-left: 2rem;
+}
+
+#main {
+  position: absolute;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  width: 100%;
+
+  &.menuShowing {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+
+  header {
+    background-color: #012955;
+    color: #FFFFFF;
+    height: 4rem;
+    padding-left: 3rem;
+  }
+
+}
+
+#menu {
+  background-color: #666666;
+  color: #FFFFFF;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+
+}
+
+ul {
+  list-style: none;
+  padding-left: .5rem;
+
+  li {
+    height: 2rem;
+  }
+}
+
+
+// Uncomment for basic menu sliding
+#main {
+
+  &.menuShowing-add {
+    .transition;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  &.menuShowing-add-active {
+    -webkit-transform: translateX(200px);
+    transform: translateX(400px);
+  }
+
+  &.menuShowing-remove {
+    .transition;
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+  }
+
+  &.menuShowing-remove-active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+#menu {
+  .transition;
+  box-shadow: .2rem 0 1.2rem .1rem #666666;
+
+  &.ng-hide {
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-200px);
+    display:block!important;
+    box-shadow: none;
+  }
+}
+
+//
+//// uncomment for vertical menu hiding.
+//#main {
+//  &.menuShowing-remove-active {
+//        -webkit-transition:all ease-out  0.2s 0.2s;
+//        -moz-transition:all ease-out 0.2s 0.2s;
+//        -o-transition:all ease-out 0.2s 0.2s;
+//        transition: all ease-out 0.2s 0.2s;
+//  }
+//}
+//
+//#menu {
+//
+//  &.ng-hide {
+//    opacity: 0;
+//  }
+//  &.ng-hide-remove {
+//    opacity: 1;
+//  }
+//
+//  &.ng-hide-add {
+//    opacity: 1;
+//    -webkit-transform: translateX(0);
+//    transform: translateX(0);
+//  }
+//
+//  &.ng-hide-add-active {
+//    -webkit-transform: translateY(-100%);
+//    transform: translateY(-100%);
+//    opacity: 0;
+//  }
+//}
