@@ -3,16 +3,32 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Simple Data Binding - Angular is Magic</title>
+    <script type="text/javascript" src="//use.typekit.net/tlg4bsr.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
     <script src="../bower_components/angular/angular.min.js"></script>
+
+    <style>
+        body {
+            font-size: 40px;
+            font-family: "proxima-nova",sans-serif;
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        input {
+            font-size: 3rem;
+        }
+    </style>
 </head>
 <body>
+    <h1>What's Your Name?</h1>
+    <p>
+        <input type="text" ng-model="person.firstName"/>
 
-
-    <label>What's Your Name?</label>
-    <input type="text" ng-model="name"/>
-
-    <input type="text" ng-model="name"/>
-
+        <input type="text" ng-model="person.lastName"/>
+    </p>
+    <h2>Hello {{person.firstName}} {{person.lastName}}</h2>
 
 </body>
 </html>

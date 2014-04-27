@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head>
-    <title>AngularJS - Simple Directive</title>
+    <title>AngularJS - Simple Injection</title>
     <script type="text/javascript" src="//use.typekit.net/tlg4bsr.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
     <script src="../bower_components/angular/angular.min.js"></script>
-    <script src="app.js"></script>
-
 
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css"/>
     <link rel="stylesheet" href="site.css"/>
+
+    <script src="app.js"></script>
 </head>
-<body>
-    <h1>AngularJS - Simple Directive</h1>
+<body ng-controller="MyCtrl">
 
-    <p>This demo shows how to make an easy directive in order to build a reusable spinner HTML element.</p>
+    <h1>What's Your Name?</h1>
 
-    <button ng-click="showSpinner = !showSpinner">{{showSpinner ? 'Hide' : 'Show' }} Spinner</button>
+    <p>
+        <input type="text" ng-model="firstName"/>
+        <input type="text" ng-model="lastName"/>
+    </p>
 
-    <spinner ng-show="showSpinner"></spinner>
+    <button ng-click="updateName()">Update Name</button>
+
+    <h2 ng-show="displayName">Hello {{displayName}}</h2>
 
 </body>
 </html>

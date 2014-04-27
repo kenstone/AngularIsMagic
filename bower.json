@@ -19,6 +19,9 @@
   "devDependencies": {
     "angular": "~1.2.16",
     "angular-animate": "~1.2.16",
-    "normalize-css": "~3.0.1"
+    "normalize-css": "~3.0.1",
+    "angular-route": "~1.2.16",
+    "angular-resource": "~1.2.16",
+    "angular-mocks": "~1.2.16"
   }
 }

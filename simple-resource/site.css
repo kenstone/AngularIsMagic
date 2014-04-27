@@ -1,0 +1,106 @@
+.transition {
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  -o-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+}
+body {
+  font-size: 32px;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 1rem;
+}
+button {
+  font-size: 3rem;
+  background-color: #012955;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+button.delete {
+  background-color: #FF0000;
+  font-size: 1.5rem;
+}
+#cupcakeList {
+  margin-top: 3rem;
+}
+#cupcakeList li span {
+  display: inline-block;
+  width: 25rem;
+}
+#form label {
+  display: inline-block;
+  width: 10rem;
+}
+#main {
+  position: absolute;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  width: 100%;
+}
+#main.menuShowing {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+}
+#main header {
+  background-color: #012955;
+  color: #FFFFFF;
+  height: 4rem;
+  padding-left: .5rem;
+}
+#menu {
+  background-color: #666666;
+  color: #FFFFFF;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+ul {
+  list-style: none;
+  padding-left: .5rem;
+}
+ul li {
+  height: 4rem;
+}
+#main.menuShowing-add {
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  -o-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+#main.menuShowing-add-active {
+  -webkit-transform: translateX(200px);
+  transform: translateX(400px);
+}
+#main.menuShowing-remove {
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  -o-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+}
+#main.menuShowing-remove-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+#menu {
+  -webkit-transition: ease-out 0.2s;
+  -moz-transition: ease-out 0.2s;
+  -o-transition: ease-out 0.2s;
+  transition: ease-out 0.2s;
+  box-shadow: .2rem 0 1.2rem .1rem #666666;
+}
+#menu.ng-hide {
+  -webkit-transform: translateX(-200px);
+  transform: translateX(-200px);
+  display: block!important;
+  box-shadow: none;
+}

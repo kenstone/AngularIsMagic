@@ -12,6 +12,11 @@
     "node": ">=0.8.0"
   },
   "devDependencies": {
-    "bower": "~1.2.8"
+    "bower": "~1.2.8",
+    "express": "3.x",
+    "underscore": "^1.6.0",
+    "karma": "^0.12.14",
+    "karma-jasmine": "^0.1.5",
+    "karma-chrome-launcher": "^0.1.3"
   }
 }
