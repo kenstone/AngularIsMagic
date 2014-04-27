@@ -15,7 +15,6 @@ describe('Controller: Menu Controller', function() {
            get: function(data, callBack) {
            },
            save: function(data, callBack) {
-               data.id = 10;
            },
            delete: function(data, callBack) {
            },
